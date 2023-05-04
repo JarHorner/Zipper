@@ -1,29 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Button?>
-<?import javafx.geometry.Insets?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <GridPane fx:controller="com.jhorn384.PrimaryController"
-   xmlns:fx="http://javafx.com/fxml/1" alignment="center" hgap="10" vgap="10">
+   xmlns:fx="http://javafx.com/fxml/1" alignment="center" hgap="10" vgap="50">
    <padding>
       <Insets top="25" right="25" bottom="10" left="25" />
    </padding>
 
+   <!-- <HBox spacing="10" alignment="center">
+      <Text text="Welcome" id="title"
+         GridPane.columnIndex="0" GridPane.rowIndex="0"
+         GridPane.columnSpan="2" />
+   </HBox>
+
+   <HBox spacing="10" alignment="center"
+      GridPane.rowIndex="1">
+      <Button GridPane.rowIndex="1"
+         fx:id="zipButton" text="Select file to zip" onAction="#selectFileToZip" />
+   </HBox>
+
+   <HBox spacing="10" alignment="center"
+      GridPane.rowIndex="2">
+      <Button GridPane.rowIndex="2" fx:id="unzipButton" text="Select file to unzip"
+         onAction="#selectFileToUnzip" />
+   </HBox> -->
+
+
 </GridPane>
-
-
-<!-- <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171"
-xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jhorn384.PrimaryController">
-
-   <children>
-      <Label text="zipper" />
-      <Button fx:id="primaryButton" text="Switch to Secondary View" onAction="#switchToSecondary"/>
-      <Button fx:id="primaryButton" text="Select file to zip" onAction="#selectFileToZip"/>
-   </children>
-    <padding>
-      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-   </padding> 
-</VBox> -->
