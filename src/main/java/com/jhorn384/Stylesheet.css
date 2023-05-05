@@ -1,16 +1,14 @@
+#zipButton, #unzipButton {
+    -fx-color: rgb(197, 235, 197);
+    -fx-font-size: 20px;
+
+}
+
+#grid {
+    -fx-background-color: #ebebeb;
+}
+
 #title {
-    color: red;
-}
-
-#zipButton {
-    color: green;
-}
-
-#circle{
-    -fx-stroke: #757575; /* sonic silver */
-    -fx-fill: #00CC99; /* caribbean green */
-}
-
-#bg{
-    -fx-background-color: #ACACE6; /* maximum blue purple */
+    -fx-font-size: 52px;
+    -fx-font-weight: bold;
 }
