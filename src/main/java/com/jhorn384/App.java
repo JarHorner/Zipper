@@ -6,10 +6,10 @@ import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
-import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -24,6 +24,8 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
+
+        stage.getIcons().add(new Image(App.class.getResourceAsStream("resources/images/zipper_icon.png")));
 
         // vars as these values are used in multiple elements
         double buttonHeight = 100;
@@ -93,7 +95,7 @@ public class App extends Application {
         scene = new Scene(grid, 440, 360);
 
         // this ensures a CSS file is loaded for styling
-        URL url = this.getClass().getResource("Stylesheet.css");
+        URL url = this.getClass().getResource("resources/style/Stylesheet.css");
         if (url == null) {
             System.out.println("Resource not found. Aborting.");
             System.exit(-1);
