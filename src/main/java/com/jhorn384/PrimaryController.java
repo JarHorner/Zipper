@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.awt.Desktop;
 import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
 
@@ -76,7 +75,6 @@ public class PrimaryController {
             System.out.println("----------------------------------");
 
             int beginIndex = directoryPath.lastIndexOf('\\');
-            int endIndex = directoryPath.lastIndexOf('.');
             String path = directoryPath.substring(0, beginIndex + 1);
 
             // trys to zip file, if the file exists
@@ -86,10 +84,9 @@ public class PrimaryController {
 
                 UnzipFile.unzipFile(pathToUnzip, zipIn);
 
-                String fileToOpen = directoryPath.substring(0, endIndex + 1);
-                Desktop desktop = Desktop.getDesktop();
-
-                desktop.open(new File(fileToOpen));
+                // this opens the newly unzipped folder
+                String command = "explorer.exe " + directoryPath;
+                Runtime.getRuntime().exec(command);
 
                 System.out.println("----------------------------------");
                 System.out.println("The file is zipped!");

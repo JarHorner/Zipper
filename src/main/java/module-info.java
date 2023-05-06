@@ -1,7 +1,7 @@
 module com.jhorn384 {
+    requires transitive javafx.graphics;
     requires javafx.controls;
     requires javafx.fxml;
-    requires java.desktop;
 
     opens com.jhorn384 to javafx.fxml;
 
