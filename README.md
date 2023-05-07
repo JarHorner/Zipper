@@ -4,7 +4,7 @@ I started this project to recall my Java knowledge and use certain technologies 
 
 ## Usage
 
-By using Maven, Once the code is cloned, the program should run fine right away.
+By using Maven, Once the code is cloned, the program should run fine right away. if not, make sure to validate, then compile using Maven.
 
 ## Acknowledgements
 
